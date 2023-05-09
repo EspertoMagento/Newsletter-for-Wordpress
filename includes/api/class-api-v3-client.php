@@ -285,7 +285,7 @@ class NL4WP_API_v3_Client {
                             $this->get_log()->debug( sprintf( "CALL service_user_subscribe %s %s", print_r($data_to, true), $ip ) );
                             $result = service_user_subscribe($data_to, $ip);
                         } else {
-                            $this->get_log()->debug( sprintf( "CALL service_user_create %s %s", print_r($data_to, true) ) );
+                            $this->get_log()->debug( sprintf( "CALL service_user_create %s", print_r($data_to, true) ) );
                             $result = service_user_create($data_to);
                         }
                         
